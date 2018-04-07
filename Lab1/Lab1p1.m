@@ -14,12 +14,18 @@ z_n = cosineseq(n(end), pi/4);
 figure(1);
 subplot(3,1,1);
 stem(n, x_n);
+title('Lab 1 Problem 1');
+ylabel('amplitude');
+
 
 subplot(3,1,2);
 stem(n, y_n);
+ylabel('amplitude');
 
 subplot(3,1,3);
 stem(n, z_n);
+ylabel('amplitude');
+xlabel('samples');
 
 
 function x = stepseq(n, n0) 
